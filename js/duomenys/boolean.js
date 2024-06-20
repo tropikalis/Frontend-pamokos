@@ -7,6 +7,34 @@ Boolean logikos operatoriai:
 - && (and)
 - || (or)
 - ! (not)
+
+Kaip interpretuojami kiti duomenu tipai ir ju reiksmes,
+ jei jos yra naudojamos lyg boolean'ai?
+ String:
+- jei tuscias - false
+- jei ne tuscias - true
+
+Number:
+- jei NaN - false   Nan yra ne skčius, mo skaičiaus tipas
+- jei nulis - false
+- jei ne nulis - true
+- jei Infinity - true
+- jei -Infinity - true
+
+Array:
+- jei tuscias - true
+- jei ne tuscias - true
+
+Object:
+- jei tuscias - true
+- jei ne tuscias - true
+
+Undefined - false
+null - false
+
+
+
+
 */
 const username = 'Jonas';
 const age = 99;
@@ -42,6 +70,7 @@ console.log(2 + 2 * 2);
 console.log((2 + 2) * 2);
 
 console.clear();
+
 console.log(true && true);
 console.log(true && false);
 console.log(false && true);
@@ -54,6 +83,7 @@ console.log(false || false);
 // su 2 -> 8 variantai (2 su end ir 2 su or)
 
 console.clear();
+
 console.log(true && true || true);
 console.log(true && true || false);
 
@@ -101,4 +131,20 @@ a x b x c
 
 console.log(!true);
 console.log(!false);
-// daugiau nei 2 sauktukai - nerasyti
+console.log(!!false);   // daugiau nei 2 sauktukai - nerasyti
+
+console.clear();
+
+const b = 4 + 2;
+if (6 === 7) {     // 7 yra skaiciaus tipo reikšmė, kuri reiškia 7 vienetus.
+    console.log(true);
+} else {
+    console.log(false);
+}
+console.clear();
+
+if (1 === true) {
+    console.log('Taip');
+} else {
+    console.log('Ne');
+}
