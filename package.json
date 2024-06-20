@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "switch": "node --watch ./js/palyginimas/switch.js",
     "arrayMethods": "node --watch ./js/metodai/arrayMethods.js",
     "des": "node --watch ./js/metodai/des.js",
     "spread": "node --watch ./js/metodai/spread.js",
