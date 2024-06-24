@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "d3": "node --watch ./js/qa/d3.js",
+    "method:array2": "node --watch ./js/metodai/array2.js",
+    "cw:well": "node --watch ./codewars/well.js",
+    "for-others": "node --watch ./js/ciklai/for-others.js",
     "switch": "node --watch ./js/palyginimas/switch.js",
     "arrayMethods": "node --watch ./js/metodai/arrayMethods.js",
     "des": "node --watch ./js/metodai/des.js",
