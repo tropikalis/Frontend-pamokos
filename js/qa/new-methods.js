@@ -1,3 +1,5 @@
+// d5 file? Duomenu tipo objekte ispleciame funkcionaluma su nauju metodu
+
 const text = 'Labas rytas';
 
 String.prototype.firstSymbol = function () {
