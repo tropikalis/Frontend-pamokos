@@ -55,5 +55,18 @@ console.log(polish('Jędrzej Bładziński'), '-->', 'Jedrzej Bladzinski');
 console.log(polish('Lech Wałęsa'), '-->', 'Lech Walesa');
 console.log(polish('Maria Skłodowska-Curie'), '-->', 'Maria Sklodowska-Curie');
 
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+const word = 'fox';
+
+console.log(
+  `The word "${word}" ${
+    sentence.includes(word) ? 'is' : 'is not'
+  } in the sentence`,
+);
+// Expected output: "The word "fox" is in the sentence"
+
+
+
 
 
